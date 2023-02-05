@@ -22,13 +22,13 @@ function edit(id) {
   let elem = document.getElementById(id).parentElement
   let innertxt = elem.parentElement.firstChild.nodeValue
   inputfield.value = innertxt
-  add.classList.add("dis-none")
+  addbtn.classList.add("dis-none")
   editbtn.classList.remove("dis-none")
   editbtn.onclick = () => {
     let html = elem.outerHTML
     elem.parentElement.innerHTML = inputfield.value + html
     inputfield.value = ""
-    add.classList.remove("dis-none")
+    addbtn.classList.remove("dis-none")
     editbtn.classList.add("dis-none")
     document.getElementById(id).nextElementSibling.classList.remove("dis-none")
   }
