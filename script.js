@@ -33,21 +33,21 @@ add.onclick = () => {
 }
 
 function edit(id) {
-  document.getElementById(id).nextElementSibling.classList.add("show")
+  document.getElementById(id).nextElementSibling.classList.add("dis-none")
   let elem = document.getElementById(id).parentElement
   let innertxt = elem.parentElement.firstChild.nodeValue
   inputfield.value = innertxt
   inputfield.setAttribute("placeholder", "edit your task here")
-  add.classList.add("show")
-  editbtn.classList.remove("show")
+  add.classList.add("dis-none")
+  editbtn.classList.remove("dis-none")
   editbtn.onclick = () => {
     let html = elem.outerHTML
     elem.parentElement.innerHTML = inputfield.value + html
     inputfield.value = ""
     inputfield.setAttribute("placeholder", "add your task here")
-    add.classList.remove("show")
-    editbtn.classList.add("show")
-    document.getElementById(id).nextElementSibling.classList.remove("show")
+    add.classList.remove("dis-none")
+    editbtn.classList.add("dis-none")
+    document.getElementById(id).nextElementSibling.classList.remove("dis-none")
   }
 }
 
