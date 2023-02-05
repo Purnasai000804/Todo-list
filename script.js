@@ -22,14 +22,12 @@ function edit(id) {
   let elem = document.getElementById(id).parentElement
   let innertxt = elem.parentElement.firstChild.nodeValue
   inputfield.value = innertxt
-  inputfield.setAttribute("placeholder", "edit your task here")
   add.classList.add("dis-none")
   editbtn.classList.remove("dis-none")
   editbtn.onclick = () => {
     let html = elem.outerHTML
     elem.parentElement.innerHTML = inputfield.value + html
     inputfield.value = ""
-    inputfield.setAttribute("placeholder", "add your task here")
     add.classList.remove("dis-none")
     editbtn.classList.add("dis-none")
     document.getElementById(id).nextElementSibling.classList.remove("dis-none")
