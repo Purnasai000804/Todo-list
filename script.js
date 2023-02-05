@@ -52,9 +52,7 @@ function edit(id) {
 }
 
 function del(id) {
-  console.log(id)
   let elem = document.getElementById(id).parentElement
-  console.log(elem)
   elem.parentElement.remove()
 }
 
