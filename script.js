@@ -30,15 +30,6 @@ add.onclick = () => {
     inputfield.setAttribute("placeholder", "Plz enter something to add")
   }
   inputfield.value = ""
-  // this is for completing the task which cuts the para tag but is not working 
-  //let list = document.querySelectorAll("#container p")
-  //  for (let x = 0; x < list.length; x++) {
-  //    let task=list[x].firstChild.nodeValue
-  //    console.log(task)
-  //    task.onclick = () => {
-  //    list[x].classList.toggle("completed")
-  //    }
-  //  }
 }
 
 function edit(id) {
