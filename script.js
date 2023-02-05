@@ -1,5 +1,5 @@
 let i = 0
-add.onclick = () => {
+addbtn.onclick = () => {
   let p = document.createElement("p")
   if (inputfield.value != "") {
     p.innerHTML = inputfield.value
