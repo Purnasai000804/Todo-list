@@ -54,7 +54,7 @@ button{
 button:hover{
   cursor: pointer;
 }
-#add{
+#addbtn{
   color:seagreen;
 }
 #editbtn{
